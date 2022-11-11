@@ -1,0 +1,339 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.carousel-inner .carousel-item{
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-caption button{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: 2px solid;
+}
+.carousel-caption button:hover{
+    background-color: white;
+    color: #efba00;
+}
+  
+.cont-1{
+    background-color:white;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    /* margin: 5px; */
+    display: flex;
+}
+
+.cont-1 p{
+    font-size: 30px;
+    position: absolute;
+    margin: 40px 0 0 -25px;
+    font-weight: bold;
+}
+
+.section-container
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+height: 90vh;
+}
+.section-container .columns
+{
+flex:0 0 auto;
+width:50%;
+/* height: 100vh; */
+}
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.section-container .columns.content .content-container
+{
+padding:100px;
+background-color: #161c2e;
+color: white;
+height: 90vh;
+text-align: center;
+}
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+text-align: left;
+}
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:left;
+}
+@media screen and (max-width:767px)
+{
+.section-container
+{
+flex-flow:row wrap;
+}
+.section-container .columns.image{
+display:block;
+order:1;
+width:100%;
+height:250px;
+}
+.section-container .columns.content
+{
+display:block;
+order:2;
+width:100%;
+}
+.section-container .columns.content .content-container
+{
+padding:20px 35px;
+}
+.section-container .columns.content .content-container h5
+{
+margin-bottom:5px;
+}
+}
+
+.section-container .columns.content .content-container p button{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: 2px solid;
+}
+
+.section-container .columns.content .content-container p .btn1:hover{
+    border: 2px solid #efba00;
+    color: #efba00;
+}
+.section-container .columns.content .content-container p .btn2{
+    background-color: #efba00;
+    color: white;
+    border: none;
+}
+
+.section-container .columns.content .content-container .service-item .number {
+    font-weight: 700;
+    font-size: 100px;
+    left: 0;
+    margin-left: -50px;
+    top: 0;
+    color: rgba(112, 139, 71, 0.05);
+    z-index: 1;
+    line-height: 100px;
+    /* position: absolute; */
+}
+
+/* .carousel .carousel-items {
+	color: #999;
+	overflow: hidden;
+	min-height: 120px;
+	font-size: 13px;
+}
+.carousel .media img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 0 15px 0 60px ;
+	position: relative;
+}
+.carousel .testimonial::before {
+	content: "\201C";
+	font-family: Arial,sans-serif;
+	color: #e2e2e2;
+	font-weight: bold;
+	font-size: 68px;
+	line-height: 54px;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #1c47e3;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 1px 3px;
+	box-sizing: border-box;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border: 4px solid #fff;
+}
+.carousel-indicators li.active {
+	color: #fff;
+	background: #1c47e3;    
+	border: 5px double;    
+} */
+
+.container-lg{
+    margin-top: 20px;
+}
+.carousel .carousel-items {
+	color: #999;
+	overflow: hidden;
+	min-height: 120px;
+	font-size: 13px;
+}
+.carousel .media {
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.carousel .media img {
+	width: 75px;
+	height: 75px;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial-wrapper {
+	padding: 0 10px;
+}
+.carousel .testimonial {
+	color: #808080;
+	position: relative;
+	padding: 15px;
+	background: #f1f1f1;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+.carousel .testimonial::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: block;
+	background: #f1f1f1;
+	border: 1px solid #efefef;
+	border-width: 0 0 1px 1px;
+	position: absolute;
+	bottom: -8px;
+	left: 46px;
+	transform: rotateZ(-46deg);
+}
+.carousel .star-rating li {
+	padding: 0 2px;
+}
+.carousel .star-rating i {
+	font-size: 16px;
+	color: #ffdc12;
+}
+.carousel .overview {
+	padding: 3px 0 0 15px;
+}
+.carousel .overview .details {
+	padding: 5px 0 8px;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #1abc9c;
+}
+.carousel .carousel-indicators {
+	bottom: -70px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 1px 2px;
+	box-sizing: border-box;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border: 4px solid #fff;
+}
+.carousel-indicators li.active {
+	color: #fff;
+	background: #1abc9c;
+	border: 5px double;    
+}
+
+footer{
+    background-color: #efba00;
+    margin-top: 68px;
+    background-attachment: fixed;
+    height: 50vh;
+    padding: 20px 20px;
+
+}
+  
+.mb80{
+    margin-top: 20px;
+}
+.col-md-4 {
+    width: 412px;
+    flex: 0 0 auto;
+    margin: 10px 10px;
+}
+
+.col-md-4 h3{
+    font-size: 30px;
+}
+
+.col-md-4 ul {
+    list-style: none;
+   
+
+}
+.col-md-4 ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.foot p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+.navbar-nav{
+    font-size: 20px;
+}
